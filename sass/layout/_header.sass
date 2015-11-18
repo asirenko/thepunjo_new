@@ -1,0 +1,52 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+.main-content
+	min-height: 100vh
+	background: $color-3
+	z-index: $content
+	
+
+.main-header
+	position: relative
+
+	height: $header-height-L
+	background: $color-4
+	z-index: $above-content
+
+.logo
+	position: absolute
+	top: 32px
+	left: 5%
+
+	line-height: 16px
+
+.header-buttons
+	position: absolute
+	display: inline-block
+	top: 3px
+	right: 5%
+	
+	li
+		display: inline-block
+
+.search-trigger, .nav-trigger
+	position: relative
+	display: block
+	width: 44
+	height: 44
+	overflow: hidden
+	white-space: nowrap
+
+	color: transparent //Hide text
+	z-index: $above-content
+
+	&:before, &:after
+		//Search Icon
+		content: ''
+		position: absolute
+		@include transition(opacity .3s)
+
+	&:before
+		//Lens

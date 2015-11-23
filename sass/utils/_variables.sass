@@ -2,33 +2,101 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
+// Grid Variables
+
+$max-width: ceil(100 / 1344 * 820%)
+
+$wrap-left: ceil((100 - $max-width) / 2)
+$wrap-right: $wrap-left
+
+// Separator
+
+$border-width: cell(100 / (1344 / 2) * 404%)
+
+// Navigation Height
+
+$nav-height-S: 50px
+$nav-height-M: 95px
+
+// Expertise
+
+$max-width-block: 100 / 1344 * 321.5%
+$margin-block: ceil(100 / 1344 * 10%)
+
 // Colors
 
-$color-1: #2e3233 // grey dark
-$color-2: #69aa6f // green
-$color-3: #e2e3df // grey light 
-$color-4: #ffffff // white
+$white: #ffffff
 
-// Fonts 
+$dark-gray: #1b1b1b
+$light-grey: #bbbbbb
+$primary-color: #f39c12
+$secondary-color: #383838
+$p-color: #686767
+$h3-color: #6e6e6e
 
-$primary-font: sans-serif
-
-// Header size
-
-$header-height-S: 50px
-$header-height-L: 80px
-
-// Navigation size
-
-$nav-width-S: 260px
-
-// Search size
-
-$search-height-S: 50px
-$search-height-L: 120px
+// $font-color:
+// $primary-color: 
+// $secondary-color:
+// $link-color:
+// $border-color:
+// $dark-grey:
+// $light-grey:
 
 // Z-index
+$content-zindex: 1
+$above-content: 2
 
-$below-content: 1
-$content: 2
-$above-content: 3
+//$below-content: 1
+//$content: 2
+//$above-content: 3
+
+// Typography
+
+$font-family-raleway: "Raleway", Arial, sans-serif
+$font-family-arial: Arial, sans-serif
+
+$font-size-base: 14px
+$font-size-big: ceil(($font-size-base * 3.42)); // ~48px
+$font-size-large: ceil(($font-size-base * 1.25)); // ~18px
+$font-size-small: ceil(($font-size-base * 0.85)); // ~12px
+
+
+$font-size-h1: 24px
+$font-size-h2: 34px
+$font-size-h3: 15px
+$font-size-h4: ceil(($font-size-base * 1.25)) // ~18px
+$font-size-h5: $font-size-base;
+$font-size-h6: ceil(($font-size-base * 0.85)) // ~12px
+
+$line-height-base: 24px
+$line-height-computed: floor(($font-size-base * $line-height-base)) // ~20px
+
+$light-font-weight: 300
+$font-weigh-400: 400
+$base-font-weight: 700
+
+// Links
+
+$link-color: $white
+$link-hover-color: $primary-color
+
+// Components
+
+//$padding-nav-horizontal: 22px
+
+
+$padding-base-vertical:          6px
+$padding-base-horizontal:        12px
+
+$padding-large-vertical:         10px
+$padding-large-horizontal:       16px
+
+$padding-small-vertical:         5px
+$padding-small-horizontal:       10px
+
+$line-height-large:              1.33
+$line-height-small:              1.5
+
+$border-radius-base:             4px
+$border-radius-large:            6px
+$border-radius-small:            3px

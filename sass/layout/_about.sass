@@ -1,0 +1,30 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the about of the site/application.
+// -----------------------------------------------------------------------------
+
+.about
+	@extend .clearfix
+	margin-top: 66px
+
+	+MQ(M)
+		margin-top: 116px
+
+	&__image
+		display: none
+		float: none
+		max-height: 632px
+
+		+MQ(M)
+			display: block
+			float: left
+			width: 46%
+
+	&__aside
+		display: table-cell
+		width: 100%
+		padding: 0 5%
+
+		+MQ(M)
+			margin-top: 0
+			width: 54%
+			padding: 0 10%

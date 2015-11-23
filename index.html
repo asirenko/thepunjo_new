@@ -3,36 +3,392 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- Mobile Specific Metas -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Navigation | Andrii Sirenko</title>
+	<title>thePunjo | Andrii Sirenko</title>
 
+	<meta name="description" content="Final Homework - Page-proofs and responsive layout">
+	<meta name="author" content="Andrii Sirenko">
+
+	<!-- FONT -->
+	<link href='https://fonts.googleapis.com/css?family=Raleway:700,300' rel='stylesheet' type='text/css'>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/main.css">
+
+	<!-- Favicon -->
+	<!-- <link rel="icon" type="image/png" href="images/favicon.png" /> -->
 </head>
 <body>
-	<header class="main-header">
-		<a class="logo" href="#0">Logo</a>
-		<nav class="nav"></nav>
-		<ul class="header-buttons">
-			<li><a class="search-trigger" href="#cd-search">Search<span></span></a></li>
-			<li><a class="nav-trigger" href="#cd-primary-nav">Menu<span></span></a></li>
-		</ul>
-	</header>
+<header class="header">
+	<div class="header__main">
+		<h1 class="header__main__logo">
+			<a class="header__main__logo--item" href="#">
+				the<b><span>P</span>unjo</b>
+			</a>
+		</h1>
 
-	<main class="main-content">
-		<!-- your content here -->
-	</main>
-
-	<div class="overlay"></div>
-
-	<div class="search">
-		<form>
-			<input type="search" placeholder="Search...">
-		</form>
+		<nav class="header__main__nav">
+			<div class="header__main__nav__list">
+				<a class="header__main__nav--item" href="#0">Home</a>
+				<a class="header__main__nav--item" href="#0">About</a>
+				<a class="header__main__nav--item" href="#0">Expertise</a>
+				<a class="header__main__nav--item" href="#0">Skills</a>
+				<a class="header__main__nav--item" href="#0">Gallery</a>
+				<a class="header__main__nav--item" href="#0">Story</a>
+				<a class="header__main__nav--item" href="#0">Client</a>
+				<a class="header__main__nav--item" href="#0">Contact</a>
+			</div>
+		</nav>
 	</div>
 
-<script src="js/jquery-2.1.1.js"></script>
-<script src="js/jquery.mobile.custom.min.js"></script>
+	<div class="header__intro-unit">
+		<p class="header__intro-unit--title">Awesome<br> <strong>personal template forever</strong></p>
+
+		<button class="button button--outline">Get started</button>
+		<button class="button">My portfolio</button>
+	</div>
+</header>
+
+<!-- Main -->
+
+<main>
+	<article class="about">
+		<img class="about__image" src="../images/pic/pic-about.png" alt="Image" />
+
+		<aside class="about__aside">
+			<h2 class="title-border">
+				<span class="title">About me</span>
+			</h2>
+
+			<p class="about__aside--description">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do  eiusmod tempor incidi dunt ut labore et dolore magna aliqua.
+			</p>
+			<p class="about__aside--description">
+				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit. Excepteur sint occaecat cupidatat non proi dent.
+			</p>
+			<p class="about__aside--description">
+				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit.
+			</p>
+
+			<div class="about__skills"></div>
+		</aside>
+	</article>
+
+	<section class="service">
+		<h2 class="title-border">
+			<span class="title">My service</span>
+		</h2>
+
+		<ul class="service__list">
+			<li class="service__list--item">
+				<a href="#0">
+					<i class="service__list--item--ic-camera"></i>
+					<h3 class="service__list--item--title">Photography</h3>
+					<p class="service__list--item--description">
+						Lorem ipsum dolor consec tetur ang elit dolibus magni incidunt fugit assumenda.
+					</p>
+				</a>
+			</li>
+
+			<li class="service__list--item">
+				<a href="#0">
+					<i class="service__list--item--ic-calendar"></i>
+					<h3 class="service__list--item--title">Event management</h3>
+					<p class="service__list--item--description">
+						Lorem ipsum dolor consec tetur ang elit dolibus magni incidunt fugit assumenda.
+					</p>
+				</a>
+			</li>
+
+			<li class="service__list--item">
+				<a href="#0">
+					<i class="service__list--item--ic-math"></i>
+					<h3 class="service__list--item--title">Mathematics</h3>
+					<p class="service__list--item--description">
+						Lorem ipsum dolor consec tetur ang elit dolibus magni incidunt fugit assumenda.
+					</p>
+				</a>
+			</li>
+
+			<li class="service__list--item">
+				<a href="#0">
+					<i class="service__list--item--ic-joomla"></i>
+					<h3 class="service__list--item--title">Programming</h3>
+					<p class="service__list--item--description">
+						Lorem ipsum dolor consec tetur ang elit dolibus magni incidunt fugit assumenda.
+					</p>
+				</a>
+			</li>
+
+			<li class="service__list--item">
+				<a href="#0">
+					<i class="service__list--item--ic-global"></i>
+					<h3 class="service__list--item--title">Global project</h3>
+					<p class="service__list--item--description">
+						Lorem ipsum dolor consec tetur ang elit dolibus magni incidunt fugit assumenda.
+					</p>
+				</a>
+			</li>
+
+			<li class="service__list--item">
+				<a href="#0">
+					<i class="service__list--item--ic-target"></i>
+					<h3 class="service__list--item--title">Creative design</h3>
+					<p class="service__list--item--description">
+						Lorem ipsum dolor consec tetur ang elit dolibus magni incidunt fugit assumenda.
+					</p>
+				</a>
+			</li>
+
+			<li class="service__list--item">
+				<a href="#0">
+					<i class="service__list--item--ic-theme"></i>
+					<h3 class="service__list--item--title">Responsive theme</h3>
+					<p class="service__list--item--description">
+						Lorem ipsum dolor consec tetur ang elit dolibus magni incidunt fugit assumenda.
+					</p>
+				</a>
+			</li>
+
+			<li class="service__list--item">
+				<a href="#0">
+					<i class="service__list--item--ic-seo"></i>
+					<h3 class="service__list--item--title">Seo service</h3>
+					<p class="service__list--item--description">
+						Lorem ipsum dolor consec tetur ang elit dolibus magni incidunt fugit assumenda.
+					</p>
+				</a>
+			</li>
+		</ul>
+	</section>
+
+	<section class="statistic">
+		<h2 class="statistic__title">My statistic</h2>
+
+		<div class="statistic__unit">
+			<div class="statistic__unit-item">
+				<p class="statistic__unit-item__number">4609</p>
+				<i class="statstic__unit-item__ic-laptop"></i>
+				<p class="statistic__unit-item__text">Finished projects</p>
+			</div>
+
+			<div class="statistic__unit-item">
+				<p class="statistic__unit-item__number">3470</p>
+				<i class="statstic__unit-item__ic-user"></i>
+				<p class="statistic__unit-item__text">Happy Client</p>
+			</div>
+
+			<div class="statistic__unit-item">
+				<p class="statistic__unit-item__number">2908</p>
+				<i class="statstic__unit-item__ic-awards"></i>
+				<p class="statistic__unit-item__text">Awards</p>
+			</div>
+		</div>
+	</section>
+
+<!-- My Work -->
+
+	<section class="portfolio">
+		<h2 class="portfolio__title">My Work</h2>
+
+		<nav class="portfolio__nav">
+			<a class="portfolio__nav--item" href="#0">Full Gallery</a>
+			<a class="portfolio__nav--item" href="#0">Web Design</a>
+			<a class="portfolio__nav--item" href="#0">Landing Pages</a>
+			<a class="portfolio__nav--item" href="#0">Personal Blog</a>
+		</nav>
+
+		<ul class="portfolio__list">
+			<li class="portfolio__list--item">
+				<img class="portfolio__list--item__pic" src="img/img1.png">
+				<figcaption class="portfolio__list--item__bg">
+					<div class="portfolio__list--item__bg--detail">
+						<h4 class"portfolio__list--item__bg--detail__title">Work photo</h4>
+						<p class="portfolio__list--item__bg--detail__description">Landing page photo</p>
+					</div>
+				</figcaption>
+			</li>
+			<li class="portfolio__list--item">
+				<img class="portfolio__list--item__pic" src="img/img1.png">
+				<figcaption class="portfolio__list--item__bg">
+					<div class="portfolio__list--item__bg--detail">
+						<h4 class"portfolio__list--item__bg--detail__title">Work photo</h4>
+						<p class="portfolio__list--item__bg--detail__description">Landing page photo</p>
+					</div>
+				</figcaption>
+			</li>
+			<li class="portfolio__list--item">
+				<img class="portfolio__list--item__pic" src="img/img1.png">
+				<figcaption class="portfolio__list--item__bg">
+					<div class="portfolio__list--item__bg--detail">
+						<h4 class"portfolio__list--item__bg--detail__title">Work photo</h4>
+						<p class="portfolio__list--item__bg--detail__description">Landing page photo</p>
+					</div>
+				</figcaption>
+			</li>
+			<li class="portfolio__list--item">
+				<img class="portfolio__list--item__pic" src="img/img1.png">
+				<figcaption class="portfolio__list--item__bg">
+					<div class="portfolio__list--item__bg--detail">
+						<h4 class"portfolio__list--item__bg--detail__title">Work photo</h4>
+						<p class="portfolio__list--item__bg--detail__description">Landing page photo</p>
+					</div>
+				</figcaption>
+			</li>
+			<li class="portfolio__list--item">
+				<img class="portfolio__list--item__pic" src="img/img1.png">
+				<figcaption class="portfolio__list--item__bg">
+					<div class="portfolio__list--item__bg--detail">
+						<h4 class"portfolio__list--item__bg--detail__title">Work photo</h4>
+						<p class="portfolio__list--item__bg--detail__description">Landing page photo</p>
+					</div>
+				</figcaption>
+			</li>
+			<li class="portfolio__list--item">
+				<img class="portfolio__list--item__pic" src="img/img1.png">
+				<figcaption class="portfolio__list--item__bg">
+					<div class="portfolio__list--item__bg--detail">
+						<h4 class"portfolio__list--item__bg--detail__title">Work photo</h4>
+						<p class="portfolio__list--item__bg--detail__description">Landing page photo</p>
+					</div>
+				</figcaption>
+			</li>
+			<li class="portfolio__list--item">
+				<img class="portfolio__list--item__pic" src="img/img1.png">
+				<figcaption class="portfolio__list--item__bg">
+					<div class="portfolio__list--item__bg--detail">
+						<h4 class"portfolio__list--item__bg--detail__title">Work photo</h4>
+						<p class="portfolio__list--item__bg--detail__description">Landing page photo</p>
+					</div>
+				</figcaption>
+			</li>
+		</ul>
+	</section>
+
+<!-- Recent Story -->
+
+	<section class="recent-story wrap">
+		<article class="recent-story__article">
+			<p class="recent-story__article--date">06 July 2015</p>
+			<h5 class="recent-story__article--title">Making the first post</h5>
+			<p class="recent-story__article--description">
+				Lorem ipsum dolor sit amet, con sectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			</p>
+			<button class="button recent-story__article--learn-more">Learn More</button>
+			<img class="recent-story__article--learn-image" src="" alt="Image" />
+		</article>
+
+		<article class="recent-story__article">
+			<img class="recent-story__article--learn-image" src="" alt="Image" />
+			<p class="recent-story__article--date">08 May 2015</p>
+			<h5 class="recent-story__article--title">Making the first post</h5>
+			<p class="recent-story__article--description">
+				Lorem ipsum dolor sit amet, con sectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			</p>
+			<button class="button recent-story__article--learn-more">Learn More</button>
+		</article>
+
+		<div class="recent-story__pagination"></div>
+	</section>
+
+<!-- Blog -->
+
+	<section class="blog">
+		<article class="blog__article">
+			<img class="blog__article--image" src="" alt="Image" />
+
+			<h2 class="blog__article--title">life changing story</h2>
+
+			<p class="blog__article--description">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod our tempor incididunt ut labore et dolore magna aliqua.
+			</p>
+			<p class="blog__article--description">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod our tempor incididunt ut labore et dolore magna aliqua. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere they cubilia Curae. Aliquam dignissim viverra dolor sit amet condimentum.
+			</p>
+			<p class="blog__article--description">
+				Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere they cubilia Curae. Aliquam dignissim viverra dolor sit amet condimentum.
+			</p>
+		</article>
+	</section>
+
+<!-- Feedback -->
+
+	<section class="testimonial wrap">
+		<h2 class="testimonial__title">Clients feedback</h2>
+
+		<div class="testimonial__feature">
+			<blockquote class="testimonial__feature__blockquote">
+				<strong class="testimonial__feature__blockquote--tittle">Great product, very fast service</strong>
+
+				<em class="testimonial__feature__blockquote--description">
+					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+				</em>
+			</blockquote>
+
+			<div class="testimonial__feature__user">
+				<img class="testimonial__feature__user--face" src="" alt="User Face" />
+
+				<strong class="testimonial__feature__user--name">John Smith</strong>
+
+				<em class="testimonial__feature__user--position">App Developer, USA</em>
+			</div>
+		</div>
+
+		<div class="testimonial__feature">
+			<blockquote class="testimonial__feature__blockquote">
+				<strong class="testimonial__feature__blockquote--tittle">Great product, very fast service</strong>
+
+				<em class="testimonial__feature__blockquote--description">
+					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+				</em>
+			</blockquote>
+
+			<div class="testimonial__feature__user">
+				<img class="testimonial__feature__user--face" src="" alt="User Face" />
+
+				<strong class="testimonial__feature__user--name">John Doe</strong>
+
+				<em class="testimonial__feature__user--position">Web Developer, Canada</em>
+			</div>
+		</div>
+
+		<div class="testimonial__pagination"></div>
+	</section>
+
+<!-- Twitter Feed -->
+
+	<section class="twitter-feed">
+		<h2 class="twitter-feed__title">Latest tweet</h2>
+
+		<p class="twitter-feed_description">
+			RT <spam>@SonyTV:</spam> Do you know what's happening on Independence Day? Tune in to Piku this 15th August at 8 PM. <spam>#FreeToWatchPiku http://t.co/1b2tWh…</spam> Deepika Padukone
+		</p>
+	</section>
+
+<!-- Contact -->
+
+	<section class="contact">
+		<h2 class="contact__title">Get in touch</h2>
+	</section>
+
+<!-- Social -->
+
+	<section class="social-nav">
+		<h2 class="social-nav__title">Follow me</h2>
+	</section>
+</main>
+
+<!-- Footer -->
+
+<footer class="copyright">
+	<p class="copyright__description">Copyright 2015 ThePunjo | All Rights Reserved</p>
+</footer>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
 </body>
 </html>

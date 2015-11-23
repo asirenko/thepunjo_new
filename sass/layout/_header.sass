@@ -2,51 +2,74 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 
-.main-content
-	min-height: 100vh
-	background: $color-3
-	z-index: $content
-	
-
-.main-header
+.header
 	position: relative
+	height: 100%
 
-	height: $header-height-L
-	background: $color-4
-	z-index: $above-content
+	background: url(../images/pic/bg-header.png) no-repeat center center
+	background-size: cover
 
-.logo
-	position: absolute
-	top: 32px
-	left: 5%
-
-	line-height: 16px
-
-.header-buttons
-	position: absolute
-	display: inline-block
-	top: 3px
-	right: 5%
-	
-	li
-		display: inline-block
-
-.search-trigger, .nav-trigger
-	position: relative
-	display: block
-	width: 44
-	height: 44
+	z-index: $content-zindex
 	overflow: hidden
-	white-space: nowrap
+	+font-smoothing
 
-	color: transparent //Hide text
-	z-index: $above-content
+	@extend .clearfix
 
-	&:before, &:after
-		//Search Icon
-		content: ''
-		position: absolute
-		@include transition(opacity .3s)
+	+MQ(L)
+		height: 836px
 
-	&:before
-		//Lens
+.header__intro-unit
+	position: absolute
+	left: 50%
+	top: 50%
+	bottom: auto
+	right: auto
+
+	width: 90%
+
+	-webkit-transform: translateX(-50%) translateY(-50%)
+	-moz-transform: translateX(-50%) translateY(-50%)
+	-ms-transform: translateX(-50%) translateY(-50%)
+	-o-transform: translateX(-50%) translateY(-50%)
+	transform: translateX(-50%) translateY(-50%)
+
+	text-align: center
+
+	&--title
+		text-align: center
+		+font-size($font-size-big - 16)
+		font-weight: $light-font-weight
+		line-height: 42px
+		font-family: $font-family-raleway
+		text-transform: uppercase
+		color: $primary-color
+
+		& strong
+			font-weight: $base-font-weight
+			color: $white
+
+
+		+MQ(M)
+			text-align: right
+			+font-size($font-size-big - 8)
+
+		+MQ(L)
+			+font-size($font-size-big)
+			line-height: 50px
+
+	.button
+		margin-right: 16px
+		margin-top: 64px
+
+		&:nth-of-type(2)
+			margin-right: 0
+
+		+MQ(M)
+			margin-top: 84px
+
+			&:nth-of-type(1)
+				margin-left: 64px
+	
+	+MQ(M)
+		max-width: $max-width
+		width: 100%

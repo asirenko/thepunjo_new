@@ -4,7 +4,11 @@
 
 // Set up a decent box model on the root element
 
+html, body
+	height: 100%
+
 html
+	font-size: $font-size-base
 	box-sizing: border-box
 
 // Make all elements from the DOM inherit from the parent box-sizing
@@ -18,19 +22,73 @@ html
 // Basic typography style
 
 body
-	font-size: 1.6rem
-	font-family: $primary-font
-
-	color: $color-1
-	background-color: $color-4
+	font-family: $font-family-arial
+	line-height: $line-height-base
+	color: $white
 
 // Basic styles for links
 
 a
-	color: $color-2
+	color: $link-color
 	text-decoration: none
+
+	&:hover
+		color: $link-hover-color
 
 // Make images responsive
 
 img
 	max-width: 100%
+
+// Basic styles for h1, h2, h3, h4, h5, h6, h7
+
+h1
+	+font-size($font-size-h1)
+	font-weight: $font-weigh-400
+
+
+h2
+	color: $secondary-color
+	font-family: $font-family-raleway
+	+font-size($font-size-h2)
+	font-weight: $base-font-weight
+	line-height: $line-height-base
+	text-transform: uppercase
+
+h3
+	color: $h3-color
+	font-family: $font-family-raleway
+	+font-size($font-size-h3)
+	font-weight: $base-font-weight
+	line-height: $line-height-base
+	text-transform: uppercase
+
+// Basic styles for paragraphs
+
+p
+	padding-top: 2px
+	color: $p-color
+	font-family: $font-family-arial
+	+font-size($font-size-base)
+	font-weight: $font-weigh-400
+	line-height: $line-height-base
+
+// Title
+
+.title
+	padding-bottom: 9px
+	border-bottom: 3px solid $primary-color
+
+.title-border
+	max-width: 404px
+
+	margin: 0 auto
+	margin-bottom: 52px
+	padding-bottom: 18px
+	border-bottom: 1px solid $primary-color
+
+	text-align: center
+
+	+MQ(M)
+		margin: 0 auto
+		margin-bottom: 52px
